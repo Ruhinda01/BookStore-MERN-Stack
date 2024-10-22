@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 app.use('/books', booksRoute);
 
 /* MONGOOSE SETUP */
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const mongoDBURL = process.env.MONGODBURL;
 mongoose
     .connect(mongoDBURL)
